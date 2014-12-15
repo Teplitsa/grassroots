@@ -3,8 +3,8 @@
  * Theme functions
  **/
 
-define('GRT_VERSION', '1.0');
-define('GRT_UPDATE_METADATA_URL', 'http://ngo2.ru/leyka-test/grassroots-metadata.json');
+define('GRT_VERSION', wp_get_theme()->get('Version'));
+define('GRT_UPDATE_METADATA_URL', 'https://github.com/Teplitsa/grassroots/blob/master/grassroots-metadata.json');
 
 // Initialize the update checker:
 require 'theme-updates/theme-update-checker.php';
@@ -15,35 +15,36 @@ add_action('after_setup_theme', 'grt_setup');
 function grt_setup() {
 	
 	// Automatic feed
-	add_theme_support( 'automatic-feed-links' );
+	add_theme_support('automatic-feed-links');
 	
 	// Set content-width
 	global $content_width;
-	if ( ! isset( $content_width ) ) $content_width = 700;
+	if( !isset($content_width) ) {
+        $content_width = 700;
+    }
 	
 	// Post thumbnails
-	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size (350, 220, true );
+	add_theme_support('post-thumbnails');
+	set_post_thumbnail_size(350, 220, true);
 	
-	add_image_size( 'post-mini', 88, 88, true );
-	add_image_size( 'post-image', 973, 640, false );	
-	add_image_size( 'post-thumb', 700, 380, true ); // to-do
+	add_image_size('post-mini', 88, 88, true);
+	add_image_size('post-image', 973, 640, false);
+	add_image_size('post-thumb', 700, 380, true); // to-do
 		
 	// Add nav menu
-	register_nav_menu( 'primary', __('Primary Menu','grt') );
+	register_nav_menu('primary', __('Primary Menu','grt'));
 	
 	// Translation
-	load_theme_textdomain('grt', get_template_directory() . '/lang');
+	load_theme_textdomain('grt', get_template_directory().'/lang');
 		
 	$locale = get_locale();
-	$locale_file = get_template_directory() . "/lang/$locale.php";
+	$locale_file = get_template_directory()."/lang/$locale.php";
 	if(is_readable($locale_file))
 		require_once($locale_file);
 	
 	// Editor style
 	add_editor_style(array('css/editor-style.css'));
 }
-
 
 /** Widget area **/
 add_action('widgets_init', 'grt_register_sidebar');
