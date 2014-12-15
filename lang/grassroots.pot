@@ -1,0 +1,149 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grassroots Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Thu Nov 20 2014 12:31:30 GMT+0400\n"
+"POT-Revision-Date: Tue Dec 02 2014 13:11:01 GMT+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: ../header.php:48
+msgid "Menu"
+msgstr ""
+
+#: ../header.php:98
+#, php-format
+msgid "All materials are avaliable under liscence %s"
+msgstr ""
+
+#: ../header.php:104
+#, php-format
+msgid "Powered by %s for&nbsp;%s"
+msgstr ""
+
+#: ../functions.php:33
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:48
+msgid "Sidebar"
+msgstr ""
+
+#: ../functions.php:50
+msgid "Widgets in this area will be shown in the sidebar."
+msgstr ""
+
+#: ../404.php:17
+msgid "Error 404"
+msgstr ""
+
+#: ../404.php:17
+msgid "Page not found"
+msgstr ""
+
+#: ../404.php:22
+msgid ""
+"It seems like you have tried to open a page that doesn't exist. It could "
+"have been deleted, moved, or it never existed at all. You are welcome to "
+"search for what you are looking for with the form below."
+msgstr ""
+
+#: ../searchform.php:2
+msgid "Search..."
+msgstr ""
+
+#: ../partials/content-page.php:27 ../partials/content_single.php:26 ..
+#: /partials/content_single-leyka_campaign.php:38
+msgid "Pages:"
+msgstr ""
+
+#: ../partials/header-archive.php:15 ../partials/header-archive.php:33
+#, php-format
+msgid "Page %s of %s"
+msgstr ""
+
+#: ../partials/header-archive.php:28
+msgid "Tag: "
+msgstr ""
+
+#: ../inc/extras.php:48
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../inc/extras.php:101
+msgid "A thumbnail must be at least 973 px wide to be displayed correctly"
+msgstr ""
+
+#: ../inc/extras.php:155
+msgid "Next"
+msgstr ""
+
+#: ../inc/extras.php:156
+msgid "Previous"
+msgstr ""
+
+#: ../inc/extras.php:182
+msgid "Older"
+msgstr ""
+
+#: ../inc/extras.php:183
+msgid "Newer"
+msgstr ""
+
+#: ../inc/extras.php:253
+msgid "Our sincere thanks"
+msgstr ""
+
+#: ../inc/customizer.php:10
+msgid "Grassroots settings"
+msgstr ""
+
+#: ../inc/customizer.php:20
+msgid "Header logo"
+msgstr ""
+
+#: ../inc/customizer.php:32
+msgid "Website favicon"
+msgstr ""
+
+#: ../inc/customizer.php:44
+msgid "Display sharing buttons"
+msgstr ""
+
+#: ../inc/customizer.php:56
+msgid "Display campaign date"
+msgstr ""
+
+#: ../inc/customizer.php:68
+msgid "Hide theme branding"
+msgstr ""
+
+#: ../inc/customizer.php:82
+msgid "Posts"
+msgstr ""
+
+#: ../inc/customizer.php:83
+msgid "Campaigns"
+msgstr ""
+
+#: ../inc/customizer.php:85
+msgid "You homepage list contains"
+msgstr ""

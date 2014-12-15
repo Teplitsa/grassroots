@@ -1,0 +1,104 @@
+/*---------------------------------------------------------
+ Menu main (_menu.scss)
+-------------------------------------------------------- */
+
+
+ul[class *='main-menu'] {
+	@include rem('font-size', 11.5px);
+	padding-top: 1px;
+	
+	li {
+		display: block;
+		margin-top: 13px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		position: relative;
+	}
+		
+	ul { margin-left: 20px; }
+		
+	.current-menu-item:before,
+	.current_page_item:before {
+		content: "\f335";
+		display: block;
+		font: 16px/1 "dashicons";
+		color: $color-link-one;
+		position: absolute;
+		top: 0px;
+		left: -20px;
+	}
+	
+}
+
+.main-menu {	
+	a {
+		color: $color-text-light;
+	}
+	
+	a:hover,
+	.current-menu-item > a,
+	.current_page_item > a {
+		color: $color-text;
+	}	
+}
+
+.main-menu-mobile {
+	
+	padding-bottom: 13px;
+	
+	a {
+		color: $color-white;
+	}
+	
+	a:hover,
+	.current-menu-item > a,
+	.current_page_item > a {
+		color: $color-link-one;
+	}
+}
+
+
+#primary-menu-mobile {
+	display: none;
+	background: $color-text;
+	@include rem('padding', 30px 38px);
+}
+
+.menu-toggle {
+	display: inline-block;
+	cursor: pointer;
+	color: $color-white;
+	background: $color-text;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 32px;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+	line-height: 32px;
+	
+	position: absolute;
+	right: 7%;
+	top: 0;
+	@include transition(all 0.3s ease-in-out);
+	
+	&:hover {
+		background: $color-link-one;
+	}
+	.dashicons {
+		line-height: 32px;
+		font-size: 21px;
+		color: inherit;
+		margin-right: 6px;
+	}
+	
+	@include for(large-screens) {
+		display: none;
+	}
+}
+
+
+
+
+

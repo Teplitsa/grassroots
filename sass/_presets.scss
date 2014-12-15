@@ -1,0 +1,234 @@
+/*---------------------------------------------------------
+ Presets (_presets.scss)
+-------------------------------------------------------- */
+
+//Fonts
+$sans:        		"Helvetica Neue", Helvetica, sans-serif;
+$heading:        	'Tenor Sans', sans-serif;
+$mono: 				"Lucida Sans Typewriter", "Lucida Console", Monaco, monospace;
+
+//Break points
+$one:				500px;
+$two:				800px;
+$three:				1000px;
+
+//Grid
+$width:				978px;
+$col:				54px;
+$gut:				30px;
+
+//Baseline
+$base: 				24px;
+
+
+// Color
+$color-text:   #333;
+$color-white:  #ffffff;
+$color-link-one: #1db318;
+$color-link-two: #aa0000;
+
+$color-secondary:  #f2f2f2;
+$color-secondary-dark:  #e2e2e2;
+$color-text-black: #2f3239;
+$color-text-semi:  #555555;
+$color-text-light: #999999;
+
+$color-border-normal: #dfdfdf;
+$color-border-light:  #e1e1e1;
+
+
+//Element
+$indent: 1.5em;
+$rule: 	 1px solid $color-border-normal;
+$sidebar-width: 280px;
+
+//Mixins
+@mixin post-title($size: 16px) {
+	font: {		
+		weight: normal;
+		family: $heading;
+	}
+	
+	@include rem('font-size', $size);
+	color: $color-text-black;	
+	a {
+		color: $color-link-one;
+		&:hover {
+			color: $color-link-two;
+		}
+	}
+	margin-bottom: 4px;
+}
+
+@mixin widget-title($size: 16px) {
+	font: {
+		family: $heading;		
+		weight: normal;
+	}
+	
+	@include rem('font-size', $size);
+	color: $color-text-black;	
+	text-transform: uppercase;
+	margin-bottom: 1.5em;
+}
+
+
+/*@mixin lead {
+	font: {
+		family: $titleFont;
+		size: 18px;
+	}
+	line-height: $tightLH;
+	color: $titleDarkC;
+	@include smart-margin($pMargin);
+}*/
+
+@mixin logo-frame {	
+	height: 0;
+	padding-bottom: 65%;
+	position: relative;
+	width: 100%;
+	span,
+	a {
+		display: inline-block;
+		height: 100%;
+		position: absolute;
+		width: 100%;		
+		text-align: center;
+		img {
+			display: inline;
+			height: auto;
+			max-height: 98%;
+			max-width: 100%;
+			vertical-align: middle;
+			width: auto;
+		}
+	}	
+}
+
+
+/** button **/
+@mixin button($color, $size : 14px) {
+	display: inline-block;
+	background: $color;
+	color: $color-white;	
+	@include rem('font-size', $size);
+	font-family: $sans;
+	text-transform: uppercase;
+	padding: 0.5em 1.2em 0.5em;
+	@include transition-all(0.3s);
+	
+	&:visited {
+		background: $color;
+		color: $color-white;
+	}
+	&:hover {
+		background: darken($color, 10%);
+		color: $color-white;	
+	}
+	
+}
+
+@mixin fixed-button($color, $size : 14px) {
+	@include button($color, $size);
+	@include border-radius(0px);
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+	box-shadow:  0px 0px 0px 0px rgba(255, 255, 255, 0);
+	cursor: pointer;
+	border: none;
+	margin: 0;	
+}
+
+/** label */
+@mixin label($color) {
+	display: inline-block;
+	background: $color;
+	color: $color-white !important;	
+	font-size: inherit;
+	font-family: $sans;	
+	padding: 0.25em 1em 0.25em;
+	@include border-radius(3px);	
+}
+
+
+/** thumbnail **/
+@mixin avatar($padding : 9px, $max_width : 100%){
+	display: block;
+	width: 100%;
+	max-width: $max_width;
+	border: 1px solid $color-border-normal;
+	padding: $padding;
+	text-align: center;
+	img {
+		max-width: 100%;
+		height: auto;
+		vertical-align: middle;
+	}
+}
+
+
+
+/* menu reset */
+@mixin menu-reset {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	@include clearfix;
+	
+	li {
+		list-style-type: none;
+		outline: none;
+		position: relative;
+	}
+		
+	li > a {
+		display: inline-block;
+		outline: none;				
+		@include transition-all(0.3s);	
+	}	
+}
+
+@mixin menu-toggle-button($bg, $color) {
+	display: inline-block;
+	color: $color;
+	border: 0; //reset
+	background-color: $bg;
+	cursor: pointer;	
+	@include rem('padding', 9px 15px);
+	@include rem('font-size', 18px);
+	@include border-radius(4px);		
+	@include transition-all(0.3s);
+	&:hover {
+		background-color: lighten($bg, 30%);
+	}	
+}
+
+
+@mixin ghost-button($color, $size : 18px) {
+	display: inline-block;
+	color: transparentize($color, 0.15);
+	border: 2px solid transparentize($color, 0.15); 
+	background-color: transparent;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-family: $heading;
+	padding: 0.4em 1.8em 0.45em;	
+	
+	@include rem('font-size', $size);	
+	@include border-radius(6px);		
+	@include transition-all(0.3s);
+	&:hover {
+		border-color: $color;
+		color: $color;
+		background: transparentize($color, 0.9);
+	}	
+}
+
+@mixin single-page-title($size : 40px){
+	@include rem('font-size', $size);			
+	line-height: 1.2;
+	font-weight: bold;
+	@include rem('margin-bottom', $size);	
+	word-break: break-word;
+	-ms-word-break: break-word;
+}

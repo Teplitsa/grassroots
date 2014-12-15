@@ -1,0 +1,87 @@
+/*---------------------------------------------------------
+ Grid (_grid.scss)
+-------------------------------------------------------- */
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; }
+
+// Rows and columns basics
+.bit {
+	float: left;
+	padding: 0 15px;
+	width: 100%; }
+
+.frame {
+	margin: 0 -15px; }
+	
+.frame:after {
+	content: "";
+	display: table;
+	clear: both; }
+
+
+//mobile first - as for beginning we have only one column
+.mf-8 {
+	width: percentage(8/12);
+}
+
+.mf-6 {
+	width: percentage(6/12);
+}
+
+.mf-4 {
+	width: percentage(4/12);
+}
+
+
+// small screens 
+@include for(small-screens) {
+	@for $i from 1 through 12 {
+	  .sm-#{$i} { width: percentage($i/12); }
+	}
+	
+	@for $i from 0 through 11 {
+	  .sm-offeset-#{$i} { margin-left: percentage($i/12) !important; }
+	}
+	
+	.sm-col-5 {
+		width: 20%;
+	}
+}
+
+
+//larger screen
+@include for(medium-screens) {
+	@for $i from 1 through 12 {
+	  .md-#{$i} { width: percentage($i/12); }
+	}
+	
+	@for $i from 0 through 11 {
+	  .md-offset-#{$i} { margin-left: percentage($i/12) !important; }
+	}
+	
+	.md-col-5 {
+		width: 20%;
+	}
+}
+
+
+//the largest screen
+@include for(large-screens) {
+	@for $i from 1 through 12 {
+	  .lg-#{$i} { width: percentage($i/12); }
+	}
+	
+	@for $i from 0 through 11 {
+	  .lg-offset-#{$i} { margin-left: percentage($i/12) !important; }
+	}
+	
+	.lg-col-5 {
+		width: 20%;
+	}
+}

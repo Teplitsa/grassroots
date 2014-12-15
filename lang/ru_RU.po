@@ -1,0 +1,172 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Grassroots Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-12-07 21:01+0300\n"
+"PO-Revision-Date: 2014-12-07 21:01+0300\n"
+"Last-Translator: Anna Ladoshkina <webdev@foralien.com>\n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && n"
+"%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Loco-Target-Locale: ru_RU\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:17
+msgid "Error 404"
+msgstr "Ошибка 404"
+
+#: 404.php:17
+msgid "Page not found"
+msgstr "Страница не найдена"
+
+#: 404.php:22
+msgid ""
+"It seems like you have tried to open a page that doesn't exist. It could "
+"have been deleted, moved, or it never existed at all. You are welcome to "
+"search for what you are looking for with the form below."
+msgstr ""
+"Похоже, вы пытались открыть страницу, которой не существует. Она могла быть "
+"удалена или ее переместили. Пожалуйста, воспользуйтесь поиском, чтобы найти "
+"необходимую информацию."
+
+#: functions.php:33
+msgid "Primary Menu"
+msgstr "Главное меню"
+
+#: functions.php:51
+msgid "Sidebar"
+msgstr "Боковая панель"
+
+#: functions.php:53
+msgid "Widgets in this area will be shown in the sidebar."
+msgstr "Эти виджеты будут выводиться в боковой панели."
+
+#: functions.php:138
+msgid ""
+"Minimalistic theme to be used with Leyka plugin by Teplitsa. Design based on "
+"Fukasava theme by Anders Norén (http://www.andersnoren.se)"
+msgstr ""
+"Минималистичная тема для использования совместно с плагином для сбора "
+"пожертвований Онлайн Лейка. Дизайн основан на теме Fukasava, автор  Anders "
+"Norén (http://www.andersnoren.se)"
+
+#: header.php:43
+msgid "Menu"
+msgstr "Меню"
+
+#: header.php:93
+#, php-format
+msgid "All materials are avaliable under liscence %s"
+msgstr "Все материалы доступны по лицензии %s"
+
+#: header.php:99
+#, php-format
+msgid "Powered by %s for&nbsp;%s"
+msgstr "Работает на %s для&nbsp;%s"
+
+#: inc/customizer.php:10
+msgid "Grassroots settings"
+msgstr "Настройки оформления"
+
+#: inc/customizer.php:20
+msgid "Header logo"
+msgstr "Логотип в шапке"
+
+#: inc/customizer.php:32
+msgid "Website favicon"
+msgstr "Фавикон сайта"
+
+#: inc/customizer.php:44
+msgid "Display sharing buttons"
+msgstr "Показывать кнопки \"поделиться\""
+
+#: inc/customizer.php:56
+msgid "Display campaign date"
+msgstr "Показывать дату кампании"
+
+#: inc/customizer.php:68
+msgid "Hide theme branding"
+msgstr "Скрыть вывод бренда темы"
+
+#: inc/customizer.php:82
+msgid "Posts"
+msgstr "Записи"
+
+#: inc/customizer.php:83
+msgid "Campaigns"
+msgstr "Кампании"
+
+#: inc/customizer.php:85
+msgid "You homepage list contains"
+msgstr "На главной странице выводятся:"
+
+#: inc/extras.php:48
+#, php-format
+msgid "Page %s"
+msgstr "Страница %s"
+
+#: inc/extras.php:101
+msgid "A thumbnail must be at least 973 px wide to be displayed correctly"
+msgstr "Миниатюра должна иметь как минимум 973 пикс. в ширину"
+
+#: inc/extras.php:155
+msgid "Next"
+msgstr "След."
+
+#: inc/extras.php:156
+msgid "Previous"
+msgstr "Пред."
+
+#: inc/extras.php:182
+msgid "Older"
+msgstr "Предшест."
+
+#: inc/extras.php:183
+msgid "Newer"
+msgstr "Послед."
+
+#: inc/extras.php:253
+msgid "Our sincere thanks"
+msgstr "Мы искренне благодарим"
+
+#: inc/media.php:135
+msgid "Column-width"
+msgstr "По ширине колонки"
+
+#: partials/content-page.php:27 partials/content_single-leyka_campaign.php:38
+#: partials/content_single.php:26
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: partials/header-archive.php:15 partials/header-archive.php:33
+#, php-format
+msgid "Page %s of %s"
+msgstr "Страница %s из %s"
+
+#: partials/header-archive.php:28
+msgid "Tag: "
+msgstr "Метка:"
+
+#: search.php:16
+msgid "Search results"
+msgstr "Результаты поиска"
+
+#: search.php:45
+msgid "Unfortunately, nothing found"
+msgstr "К сожалению, по вашему запросу ничего не найдено."
+
+#: searchform.php:2
+msgid "Search..."
+msgstr "Поиск..."
