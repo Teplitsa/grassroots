@@ -83,7 +83,7 @@
 			
 			<p id="theme-brand" style="<?php echo get_theme_mod('hide_theme_brand') ? 'display:none;' : '';?>"><?php printf(
                 __('Powered by %s for&nbsp;%s', 'grt'),
-                '<a href="http://leyka.te-st.ru/" target="_blank">Grassroots&nbsp;Theme</a>',
+                '<a href="https://github.com/Teplitsa/grassroots" target="_blank">Grassroots&nbsp;Theme</a>',
                 '<a href="http://leyka.te-st.ru/" target="_blank">WordPress</a>');?>
             </p>
 		</div>

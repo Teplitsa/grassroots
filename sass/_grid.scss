@@ -14,7 +14,13 @@
 .bit {
 	float: left;
 	padding: 0 15px;
-	width: 100%; }
+	width: 100%;
+	margin-bottom: $base;
+}
+
+.bit:last-child {
+	margin-bottom: 0;
+}
 
 .frame {
 	margin: 0 -15px; }
@@ -28,29 +34,38 @@
 //mobile first - as for beginning we have only one column
 .mf-8 {
 	width: percentage(8/12);
+	margin-bottom: 0;
 }
 
 .mf-6 {
 	width: percentage(6/12);
+	margin-bottom: 0;
 }
 
 .mf-4 {
 	width: percentage(4/12);
+	margin-bottom: 0;
 }
 
 
 // small screens 
 @include for(small-screens) {
 	@for $i from 1 through 12 {
-	  .sm-#{$i} { width: percentage($i/12); }
+		.sm-#{$i} {
+			width: percentage($i/12);
+			margin-bottom: 0;
+		}	  
 	}
 	
 	@for $i from 0 through 11 {
-	  .sm-offeset-#{$i} { margin-left: percentage($i/12) !important; }
+		.sm-offeset-#{$i} {
+			margin-left: percentage($i/12) !important;			
+		}
 	}
 	
 	.sm-col-5 {
 		width: 20%;
+		margin-bottom: 0;
 	}
 }
 
@@ -58,7 +73,10 @@
 //larger screen
 @include for(medium-screens) {
 	@for $i from 1 through 12 {
-	  .md-#{$i} { width: percentage($i/12); }
+		.md-#{$i} {
+			width: percentage($i/12);
+			margin-bottom: 0;
+		}
 	}
 	
 	@for $i from 0 through 11 {
@@ -67,6 +85,7 @@
 	
 	.md-col-5 {
 		width: 20%;
+		margin-bottom: 0;
 	}
 }
 
@@ -74,14 +93,18 @@
 //the largest screen
 @include for(large-screens) {
 	@for $i from 1 through 12 {
-	  .lg-#{$i} { width: percentage($i/12); }
+		.lg-#{$i} {
+			width: percentage($i/12);
+			margin-bottom: 0;
+		}
 	}
 	
 	@for $i from 0 through 11 {
-	  .lg-offset-#{$i} { margin-left: percentage($i/12) !important; }
+		.lg-offset-#{$i} { margin-left: percentage($i/12) !important; }
 	}
 	
 	.lg-col-5 {
 		width: 20%;
+		margin-bottom: 0;
 	}
 }
