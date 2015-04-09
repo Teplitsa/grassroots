@@ -20,12 +20,12 @@ jQuery(document).ready(function($){
             var $iframe = $(this),
                 $parent = $iframe.parent(),
                 do_resize = false;
-            if($parent.hasClass('embed-content'))
+
+            if($parent.hasClass('embed-content')) {
                 do_resize = true;
-            else if($parent.hasClass('yandex_money_quick_code')) {
+            } else if($parent.hasClass('yandex_money_quick_code') || $parent.hasClass('leyka-embed-preview')) {
                 do_resize = false;
-            }
-            else {                
+            } else {
                 
                 $parent = $iframe.parents('.post-content');
                 if($parent.length)
